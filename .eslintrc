@@ -11,17 +11,13 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "rules": {
-      "camelcase": "on",
-      "comma-dangle": ["error", "only-multiline"],
-      "semi": ["error", "always"],
-      "quotes": ["error", "double"],
-      "arrow-parens": ["error", "as-needed"],
-      "object-curly-newline": [
-        "error",
-        { "multiline": true, "consistent": true }
-      ],
-      "import/prefer-default-export": "on",
-    }
+    "comma-dangle": ["error", "only-multiline"],
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"],
+    "arrow-parens": ["error", "as-needed"],
+    "object-curly-newline": [
+      "error",
+      { "multiline": true, "consistent": true }
+    ],
   }
 }
