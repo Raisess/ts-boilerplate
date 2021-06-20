@@ -4,7 +4,7 @@ read -p "Are u sure about that? [y/n]: " opt
 
 if [ $opt = "y" ]; then
 	echo "Installing dev dependencies..."
-	npm run install
+	npm install
 	echo "Installation completed!"
 
 	echo "Removing template git history..."
@@ -19,7 +19,8 @@ if [ $opt = "y" ]; then
 	# add remote
 	read -p "You want to add a remote repository? [y/n]: " rem
 	if [ $rem = "y" ]; then
-		git remote add origin $rem
+		read -p "Remote uri: " $rl
+		git remote add origin $rl
 		echo "Added remote repository connection"
 	fi
 	echo "Git started!"
