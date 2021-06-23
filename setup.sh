@@ -19,7 +19,7 @@ if [ $opt = "y" ]; then
 	# add remote
 	read -p "You want to add a remote repository? [y/n]: " rem
 	if [ $rem = "y" ]; then
-		read -p "Remote uri: " $rl
+		read -p "Remote uri: " rl
 		git remote add origin $rl
 		echo "Added remote repository connection"
 	fi
