@@ -14,7 +14,7 @@ if [ $opt = "y" ]; then
 	echo "Initing a new git local repository..."
 	git init
 	git checkout -b main
-	git branch -d master
+	git branch -D master
 
 	# add remote
 	read -p "You want to add a remote repository? [y/n]: " rem
